@@ -1,0 +1,11 @@
+{
+    "films": [
+        {
+            "name": "Зелена миля",
+            "country": "США",
+            "data": "6 грудня 1990 рік",
+            "category": "Драми",
+            "img": "src-green-mile"
+        }
+    ]
+}

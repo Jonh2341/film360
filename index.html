@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/core.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/items.js"></script>
+    <script src="src/content.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        $(document).ready(function () {
+            mainLoad();
+            contentLoad();
+        });
+    </script>
+    <header class="header">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-text">
+              Кіно пошук
+            </span>
+        </nav>
+        <div class="panel">
+            <nav class="navbar navbar-light bg-light">
+                <ul id="films" class="nav nav-pills">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Фільми</a>
+                      <div id="films-menu" class="dropdown-menu"></div>
+                    </li>
+                    <li id="serials" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Серіали</a>
+                        <div id="serials-menu" class="dropdown-menu"></div>
+                    </li>
+                    <li id="mult" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мультфільми</a>
+                        <div id="mult-menu" class="dropdown-menu"></div>
+                    </li>
+                    <li id="anime" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Аніме</a>
+                        <div id="anime-menu" class="dropdown-menu"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Новини</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="content" class="container text-center">
+        <div id="content-row" class="row row-cols-3">
+            
+        </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
 </body>
 </html>
