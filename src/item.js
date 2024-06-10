@@ -9,7 +9,7 @@ function itemLoad(id) {
     // картинка
     const itemImageCard = $("<img>").prop("src", "./assets/" + contentItemInfo.img).addClass("img-fluid rounded-start");
     // ім'я
-    const itemTitleCard = $("<h5>").addClass("card-title").text(contentItemInfo.name)
+    const itemTitleCard = $("<h5>").addClass("card-title").text(contentItemInfo.name);
     // категорія
     const itemCategoryCard = $("<p>").addClass("card-text").text(contentItemInfo.category);
     // країна
@@ -20,7 +20,5 @@ function itemLoad(id) {
     // додавання
     contentItem.append(itemImageCard);
     contentCardItem.append(itemTitleCard, itemCategoryCard, itemCountryCard, itemDataCard);
-
-
 
 }
