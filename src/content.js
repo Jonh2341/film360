@@ -8,7 +8,7 @@ const contentLoad = function () {
     const contentData = items.films[i];
 
     // картка
-    const contentCard = $("<div>").addClass("card").css({width: "18rem",marginTop: "20px"});
+    const contentCard = $("<div>").addClass("card").css({width: "18rem",marginTop: "10px",marginBottom: "10px"});
     // картинка
     const cardImage = $("<img>").prop("src", "./assets/" + contentData.img).addClass("card-img-top");
     // інформація картки
