@@ -24,7 +24,7 @@ const items = {
         {
             "name": "Форрест Гамп",
             "country": "США",
-            "data": "23 камнепаду 1944 рік",
+            "data": "6 липня 1994 рік",
             "category": "Драма",
             "img": "Gump.jpg"
         }

@@ -1,11 +1,13 @@
 function itemLoad(id) {
-    console.log("items", items)
+    console.log("items", items);
 
     // позначаємо - знаходимо
+    const cardMain = $("#card-with-about")
     const contentItem = $("#item-src");
-    const contentCardItem = $("item-card-content");
+    const contentCardItem = $("#item-card-content");
 
     const contentItemInfo = items.films[id];
+    cardMain.css({marginTop: "20px", marginBottom: "20px"});
     // картинка
     const itemImageCard = $("<img>").prop("src", "./assets/" + contentItemInfo.img).addClass("img-fluid rounded-start");
     // ім'я
