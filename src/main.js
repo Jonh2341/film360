@@ -1,3 +1,27 @@
+const searchByFilmsCategory = function (category) {
+    category = category.toLowerCase();
+    const filtered = items.films.filter(value => {
+       console.log("filter", value);
+       const filmsCategory = value.category.toLowerCase();
+       return filmsCategory.indexOf(category) >= 0;
+    });
+ 
+    const contentRow = $("#content-row").empty();
+ 
+    for (let i in filtered) {
+       // елемент даних
+       const contentData = filtered[i];
+ 
+       contentRow.append(contentView(contentData));
+    }
+ 
+    if (filtered.length == 0) {
+       contentRow.append($("<span>").text("Нічого не знайдено!"));
+    }
+ 
+    console.log("filtr", filtered, name);
+}
+ 
 const loadFilmsCategory = function () {
     const filmCategory = [
         "Вестерни",
@@ -11,7 +35,9 @@ const loadFilmsCategory = function () {
 
     for (let i in filmCategory) {
         const category = filmCategory[i];
-        const menu = $("<a>").addClass("dropdown-item clicker-a").text(category);
+        const menu = $("<a>").click(function(){
+            searchByFilmsCategory(category);
+        }).addClass("dropdown-item clicker-a").text(category);
         filmsMenu.append(menu);
     }
 

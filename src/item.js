@@ -6,8 +6,12 @@ function itemLoad(id) {
     const contentItem = $("#item-src");
     const contentCardItem = $("#item-card-content");
 
-    const contentItemInfo = items.films[id];
-    cardMain.css({marginTop: "20px", marginBottom: "20px"});
+    // перебираємо
+    const contentItemInfo = items.films.find(value => {
+        return value.id == id;
+    });
+
+    cardMain.css({ marginTop: "20px", marginBottom: "20px" });
     // картинка
     const itemImageCard = $("<img>").prop("src", "./assets/" + contentItemInfo.img).addClass("img-fluid rounded-start");
     // ім'я
