@@ -4,7 +4,11 @@ function itemLoad(id) {
     // позначаємо - знаходимо
     const cardMain = $("#card-with-about")
     const contentItem = $("#item-src");
-    const contentCardItem = $("#item-card-content");
+    const categoryName = $("#name");
+    const categoryStyle = $("#style");
+    const categoryCountry = $("#country");
+    const categoryData = $("#dataFilms");
+    const categoryAbout = $("#paraphraf");
 
     // перебираємо
     const contentItemInfo = items.films.find(value => {
@@ -22,9 +26,15 @@ function itemLoad(id) {
     const itemCountryCard = $("<p>").addClass("card-text").text(contentItemInfo.country);
     // дата
     const itemDataCard = $("<p>").addClass("card-text").text(contentItemInfo.data);
+    // опис
+    const itemAboutCard = $("<p>").addClass("card-text").text(contentItemInfo.about);
 
     // додавання
     contentItem.append(itemImageCard);
-    contentCardItem.append(itemTitleCard, itemCategoryCard, itemCountryCard, itemDataCard);
+    categoryName.append(itemTitleCard);
+    categoryStyle.append(itemCategoryCard);
+    categoryCountry.append(itemCountryCard);
+    categoryData.append(itemDataCard);
+    categoryAbout.append(itemAboutCard);
 
 }

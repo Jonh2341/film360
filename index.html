@@ -23,58 +23,60 @@
             contentLoad();
         });
     </script>
-    <header class="header">
-        <nav class="navbar navbar-dark bg-dark">
-            <span class="navbar-text">
-                Кіно пошук
-            </span>
-        </nav>
-        <div class="panel">
-            <nav class="navbar navbar-light bg-light">
-                <ul id="films" class="nav nav-pills">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Фільми</a>
-                        <div id="films-menu" class="dropdown-menu"></div>
-                    </li>
-                    <li id="serials" class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Серіали</a>
-                        <div id="serials-menu" class="dropdown-menu"></div>
-                    </li>
-                    <li id="mult" class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Мультфільми</a>
-                        <div id="mult-menu" class="dropdown-menu"></div>
-                    </li>
-                    <li id="anime" class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Аніме</a>
-                        <div id="anime-menu" class="dropdown-menu"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новини</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input id="searchBtn" class="form-control me-2" type="search" placeholder="Введіть назву" aria-label="Search">
-                    <button onclick="searchByName()" class="btn btn-outline-primary" type="button">Пошук</button>
-                </form>
+    <div class="all-box">
+        <header class="header">
+            <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-text">
+                    Кіно пошук
+                </span>
             </nav>
+            <div class="panel">
+                <nav class="navbar navbar-light bg-light">
+                    <ul id="films" class="nav nav-pills">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Фільми</a>
+                            <div id="films-menu" class="dropdown-menu"></div>
+                        </li>
+                        <li id="serials" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Серіали</a>
+                            <div id="serials-menu" class="dropdown-menu"></div>
+                        </li>
+                        <li id="mult" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Мультфільми</a>
+                            <div id="mult-menu" class="dropdown-menu"></div>
+                        </li>
+                        <li id="anime" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Аніме</a>
+                            <div id="anime-menu" class="dropdown-menu"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новини</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input id="searchBtn" class="form-control me-2" type="search" placeholder="Введіть назву" aria-label="Search">
+                        <button onclick="searchByName()" class="btn btn-outline-primary" type="button">Пошук</button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <div id="content position-item-content" class="container text-center">
+            <div id="content-row" class="row row-cols-3">
+    
+            </div>
         </div>
-    </header>
-    <div id="content position-item-content" class="container text-center">
-        <div id="content-row" class="row row-cols-3">
-
-        </div>
+        <footer class="footer footer-end-align">
+            <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-text">
+                    Фільми
+                </span>
+            </nav>
+        </footer>
     </div>
-    <footer class="footer">
-        <nav class="navbar navbar-dark bg-dark">
-            <span class="navbar-text">
-                Фільми
-            </span>
-        </nav>
-    </footer>
 </body>
 
 </html>
